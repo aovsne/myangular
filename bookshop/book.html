@@ -1,0 +1,22 @@
+<div id="booklistwrapper">
+		<div class="findbook form-group">
+				<input type="text" class="form-control gugu" placeholder="Search here">
+		</div>
+		<div class="novel container" ng-repeat="book in books">
+			<div class="col-sm-3">
+				<img src="img/{{book.ImgUrl}}" class="img-thumbnail">
+			</div>
+			<div class="col-sm-9">
+				<h2>{{book.Name}}</h2>
+				<p>{{book.Price}}</p>
+				<ul class="list-unstyle list-inline">
+					<li>Rating:{{book.Rating}}</li>
+					<li>Binding:{{book.Binding}}</li>
+					<li>Publisher:{{book.Publisher}}</li>
+					<li>Released:{{book.Released}}</li>
+				</ul>
+				<p>{{book.Details}}</p>
+				<button class="btn btn-success" ng-click="addToCart(book)">Add to cart</button>
+			</div>
+		</div>
+	</div>

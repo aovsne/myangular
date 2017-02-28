@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>myangular</title>
+	<link rel="shortcut icon" href="#">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="header-wrapper" ng-controller="headCtrl">
+		<span class="logo">{{head.logo}}</span><br>
+		<span class="tagline">{{head.tagline}}</span>
+		<div class="nav-wrapper">
+			<ul class="nav nav-pills dudu">
+				<li class="active"><a href="#/book">BOOKS</a> </li>
+				<li><a href="#/cart">Cart</a></li>
+			</ul>
+		</div>
+	</div>
+	<div ng-view></div>
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
